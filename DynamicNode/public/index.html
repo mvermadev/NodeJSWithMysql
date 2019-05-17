@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Registration</title>
+    <style>
+        body{
+            text-align: center; font-size: 20px; font-family:  Ubuntu;
+            background-color: rgb(51, 250, 223);
+        }
+        input, button{
+            border:none; padding: 10px 20px; font-weight: bold; font-size: 20px; border-radius: 7px; text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><u> Welcome new College</u></h1>
+
+        <legend>Student Registration</legend>
+        <form action="/stdReg" method="POST">
+            <label for="fname">
+                <input type="text" name="fname" id="fname" placeholder="First Name" required autocomplete="First Name">
+            </label> <br><br>
+            <label for="lname">
+                <input type="text" name="lname" id="lname" placeholder="Last Name" required autocomplete="Last Name">
+            </label> <br><br>
+            <label for="email">
+                <input type="text" name="email" id="email" placeholder="Email" required autocomplete="Email">
+            </label> <br><br>
+            <label for="course">
+                <input type="text" name="course" id="course" placeholder="Course" required autocomplete="Course">
+            </label> <br><br>
+            <label for="cno">
+                <input type="tel" name="cno" id="cno" placeholder="Contact No" required autocomplete="Contact No">
+            </label> <br><br>
+            <label for="quali"> Qualification:
+                <input type="checkbox" name="q" id="quali" class="qualic" value="Secondry">Secondry
+                <input type="checkbox" name="q" id="quali" class="qualic" value="Primary">Primary
+                <input type="checkbox" name="q" id="quali" class="qualic" value="Graduate">Graduate
+            </label> <br><br>
+            <label for="gender">Gender:
+                <input type="radio" name="gender" id="gender" value="male">Male
+                <input type="radio" name="gender" id="gender" value="female">Female
+            </label> <br><br>
+            <label for="city">
+                <input list="cy" name='city' placeholder="City">
+                <datalist id="cy">
+                    <option value="Adipur"></option>
+                    <option value="Anjar"></option>
+                    <option value="Other"></option>
+                </datalist>
+            </label> <br><br>
+            <label for="dob">
+                <input type="date" name="dob" id="dob" placeholder="">
+            </label> <br><br>
+            <label for="favc">
+                <input type="color" name="favc" id="favc">
+            </label> <br><br>
+            <label for="range">
+                <input type="range" min="1" max="10" name="range" id="range" >
+            </label> <br><br>
+            
+            <button style="background-color: orange">Submit</button>
+        </form>
+<!-- <script src="../routes/student.js"></script> -->
+</body>
+</html>
